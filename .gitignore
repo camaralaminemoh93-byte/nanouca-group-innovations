@@ -1,0 +1,9 @@
+# Scans signés des documents sources : ils restent dans le dossier local.
+*.jpeg
+*.jpg
+!assets/*.jpg
+!assets/*.jpeg
+
+Thumbs.db
+Desktop.ini
+.DS_Store

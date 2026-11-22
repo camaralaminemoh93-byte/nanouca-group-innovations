@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Nanouca Group Innovations</title>
+  <meta name="description" content="Écrire à Nanouca Group Innovations : conseil, BTP, immobilier, voyage, bien-être ou commerce.">
+  <meta name="theme-color" content="#0c5f58">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container header-bar">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="" width="64" height="56">
+        <span>
+          <strong>Nanouca</strong>
+          <small>Group Innovations</small>
+        </span>
+      </a>
+      <input class="nav-check" type="checkbox" id="nav-check">
+      <label class="nav-toggle" for="nav-check" aria-label="Menu"><span></span><span></span><span></span></label>
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <a href="index.html" data-page="accueil">Accueil</a>
+        <a href="mot-du-pdg.html" data-page="pdg">Mot du PDG</a>
+        <a href="groupe.html" data-page="groupe">Le Groupe</a>
+        <a href="activites.html" data-page="activites">Activités</a>
+        <a href="valeurs.html" data-page="valeurs">Valeurs</a>
+        <a href="projet.html" data-page="projet">Le Projet</a>
+        <a href="contact.html" data-page="contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Échange</p>
+        <h1>Contact</h1>
+        <p class="lede">Un message, une filiale, une question. Le formulaire vérifie les champs et confirme l’envoi.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <aside class="contact-aside">
+          <h2>Nanouca Group Innovations</h2>
+          <p>Guinée. Le groupe répond à travers ses six filiales. Le téléphone, l’e-mail et l’adresse précise seront ajoutés dès que vous les transmettrez.</p>
+          <ul class="contact-list">
+            <li><a href="activites.html#consulting">Nanouca Consulting</a></li>
+            <li><a href="activites.html#btp">Nanouca BTP</a></li>
+            <li><a href="activites.html#immo">Nanouca IMMO</a></li>
+            <li><a href="activites.html#voyage">Nanouca Assistance Voyage</a></li>
+            <li><a href="activites.html#bien-etre">Nanouca Bien-être</a></li>
+            <li><a href="activites.html#business">Nanouca Business Services</a></li>
+          </ul>
+        </aside>
+
+        <div>
+          <form id="contact-form" class="form-card form" novalidate>
+            <div class="hp" aria-hidden="true">
+              <label>Société <input type="text" name="societe" tabindex="-1" autocomplete="off"></label>
+            </div>
+            <div class="field">
+              <label for="nom">Nom</label>
+              <input id="nom" name="nom" type="text" autocomplete="name" required>
+              <span class="error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <span class="error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="telephone">Téléphone <span class="note">(facultatif)</span></label>
+              <input id="telephone" name="telephone" type="tel" autocomplete="tel">
+              <span class="error"></span>
+            </div>
+            <div class="field">
+              <label for="sujet">Sujet</label>
+              <select id="sujet" name="sujet" required>
+                <option value="">Choisir une filiale</option>
+                <option>Consulting</option>
+                <option>BTP</option>
+                <option>Immobilier</option>
+                <option>Assistance Voyage</option>
+                <option>Bien-être</option>
+                <option>Business Services</option>
+                <option>Le groupe</option>
+              </select>
+              <span class="error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+              <span class="error" role="alert"></span>
+            </div>
+            <button class="btn" type="submit">Envoyer le message</button>
+            <p class="note">Version de test : le message est conservé dans ce navigateur, le temps de brancher la messagerie du groupe.</p>
+          </form>
+
+          <div id="form-success" class="form-success" hidden tabindex="-1">
+            <p class="eyebrow">Bien reçu</p>
+            <h2>Message enregistré</h2>
+            <p>Merci <strong data-name></strong>. Votre demande au sujet de « <span data-sujet></span> » est enregistrée sur cet appareil.</p>
+            <p class="note">Vous pouvez envoyer un autre message pour vérifier à nouveau le formulaire.</p>
+            <div class="actions">
+              <button class="btn" type="button" id="write-again">Écrire un autre message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.svg" alt="" width="64" height="56">
+          <span>
+            <strong>Nanouca</strong>
+            <small>Group Innovations</small>
+          </span>
+        </a>
+        <p>Créer de la valeur et inspirer la jeunesse.</p>
+      </div>
+      <div>
+        <h2>Navigation</h2>
+        <nav class="footer-nav" aria-label="Navigation du pied de page">
+          <a href="index.html" data-page="accueil">Accueil</a>
+          <a href="mot-du-pdg.html" data-page="pdg">Mot du PDG</a>
+          <a href="groupe.html" data-page="groupe">Le Groupe</a>
+          <a href="activites.html" data-page="activites">Activités</a>
+          <a href="valeurs.html" data-page="valeurs">Valeurs</a>
+          <a href="projet.html" data-page="projet">Le Projet</a>
+          <a href="contact.html" data-page="contact">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <h2>Filiales</h2>
+        <div class="footer-links">
+          <a href="activites.html#consulting">Consulting</a>
+          <a href="activites.html#btp">BTP</a>
+          <a href="activites.html#immo">Immobilier</a>
+          <a href="activites.html#voyage">Assistance Voyage</a>
+          <a href="activites.html#bien-etre">Bien-être</a>
+          <a href="activites.html#business">Business Services</a>
+        </div>
+      </div>
+      <div>
+        <h2>Écrire</h2>
+        <p>Guinée</p>
+        <p><a href="contact.html">Formulaire de contact</a></p>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>© <span id="year">2026</span> Nanouca Group Innovations. Tous droits réservés.</p>
+      <p>Version provisoire de test.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
