@@ -9,7 +9,7 @@
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,480&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-page="contact">
@@ -42,15 +42,16 @@
       <div class="container">
         <p class="eyebrow">Échange</p>
         <h1>Contact</h1>
-        <p class="lede">Un message, une filiale, une question. Le formulaire vérifie les champs et confirme l’envoi.</p>
+        <p class="lede">Écrivez ici. WhatsApp s’ouvre avec votre texte, et le +224 611 49 11 49 le reçoit dès que vous l’envoyez.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container contact-layout">
         <aside class="contact-aside">
-          <h2>Nanouca Group Innovations</h2>
-          <p>Guinée. Le groupe répond à travers ses six filiales. Le téléphone, l’e-mail et l’adresse précise seront ajoutés dès que vous les transmettrez.</p>
+          <h2>Une personne, pas un standard.</h2>
+          <p>Les messages arrivent sur le WhatsApp de Nanouca, en Guinée. Bangaly Camara est informé au moment où vous envoyez.</p>
+          <p><a class="btn btn-wa" href="https://wa.me/224611491149?text=Bonjour%20Nanouca%2C%20je%20vous%20contacte%20depuis%20le%20site." target="_blank" rel="noopener">WhatsApp · +224 611 49 11 49</a></p>
           <ul class="contact-list">
             <li><a href="activites.html#consulting">Nanouca Consulting</a></li>
             <li><a href="activites.html#btp">Nanouca BTP</a></li>
@@ -100,17 +101,18 @@
               <textarea id="message" name="message" required></textarea>
               <span class="error" role="alert"></span>
             </div>
-            <button class="btn" type="submit">Envoyer le message</button>
-            <p class="note">Version de test : le message est conservé dans ce navigateur, le temps de brancher la messagerie du groupe.</p>
+            <button class="btn btn-wa" type="submit">Envoyer sur WhatsApp</button>
+            <p class="note">Le bouton ouvre WhatsApp avec votre message déjà écrit. Il reste à appuyer sur Envoyer : le +224 611 49 11 49 est notifié immédiatement.</p>
           </form>
 
           <div id="form-success" class="form-success" hidden tabindex="-1">
             <p class="eyebrow">Bien reçu</p>
-            <h2>Message enregistré</h2>
-            <p>Merci <strong data-name></strong>. Votre demande au sujet de « <span data-sujet></span> » est enregistrée sur cet appareil.</p>
-            <p class="note">Vous pouvez envoyer un autre message pour vérifier à nouveau le formulaire.</p>
+            <h2>WhatsApp est prêt</h2>
+            <p>Merci <strong data-name></strong>. Votre message sur « <span data-sujet></span> » est préparé pour le +224 611 49 11 49.</p>
+            <p class="note">S’il ne s’est pas ouvert, utilisez le bouton ci-dessous. Dès l’envoi dans WhatsApp, la personne est informée.</p>
             <div class="actions">
-              <button class="btn" type="button" id="write-again">Écrire un autre message</button>
+              <a class="btn btn-wa" id="wa-open" href="https://wa.me/224611491149" target="_blank" rel="noopener">Ouvrir le message</a>
+              <button class="btn btn-ghost" type="button" id="write-again">Écrire un autre message</button>
             </div>
           </div>
         </div>
@@ -154,14 +156,14 @@
         </div>
       </div>
       <div>
-        <h2>Écrire</h2>
-        <p>Guinée</p>
-        <p><a href="contact.html">Formulaire de contact</a></p>
+        <h2>WhatsApp</h2>
+        <p><a href="https://wa.me/224611491149" target="_blank" rel="noopener">+224 611 49 11 49</a></p>
+        <p><a href="contact.html">Écrire un message</a></p>
       </div>
     </div>
     <div class="container footer-base">
       <p>© <span id="year">2026</span> Nanouca Group Innovations. Tous droits réservés.</p>
-      <p>Version provisoire de test.</p>
+      <p>Réponse directe sur WhatsApp.</p>
     </div>
   </footer>
   <script src="js/main.js"></script>
